@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {  
+    background-image: url(../assets/pexels-nmr-hrd-3571065.jpg);
+    background-size:cover;
+    background-position: center;
+
+}
+.header__container ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    background-color: #000;
+    align-content: center;
+    padding: 1rem 0;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+.header__container ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}  
+.header__logo, img{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.header__logo img{
+    width: 30%;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.hero{
+    height: 500px;
+}
+.hero__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+.hero__tittle{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 800;
+    background-color: #000;
+    padding:1rem ;
+    border-radius: 10%;
+    margin-bottom: 2rem;
+}
+.hero__login input {
+    display: flex;
+    width: 50%;
+    background-color: #000;
+    color:#fff;
+    border: none;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+.hero__login #hero__submit {
+    width: 25%;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.footer{
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr ;
+    grid-template-areas:
+    "footer__top"
+    "footer__contact"
+    "footer__bottom";
+    background-color:#000;
+    height: 200px;
+}
+
+.footer__top{
+    grid-area: footer__top;
+    background-color:rgba(114, 116, 207, 0.1);
+    height: 50px;
+}
+.footer__top p{
+    color: #fff;
+    padding: 1rem;
+    font-family:'Oswald', sans-serif;
+    text-decoration: underline;
+}
+.footer__contact{
+    grid-area: footer__contact;
+    display: flex;
+    justify-content:space-around;
+    padding: 1rem;
+    }
+.contact__instaLogo, .contact__faceLogo, .contact__whatsAppLogo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; 
+    }
+.footer__bottom{
+    grid-area: footer__bottom;
+    display: flex;
+    color: #fff;
+    align-items: flex-end;
+}
